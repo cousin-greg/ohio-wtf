@@ -8,6 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @font-face { font-family: 'Dragon'; src: url('./fonts/Dragon-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Dragon'; src: url('./fonts/Dragon-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Dragon'; src: url('./fonts/Dragon-SemiBold.ttf') format('truetype'); font-weight: 600; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Dragon'; src: url('./fonts/Dragon-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Dragon'; src: url('./fonts/Dragon-ExtraBold.ttf') format('truetype'); font-weight: 800; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Dragon'; src: url('./fonts/Dragon-Black.ttf') format('truetype'); font-weight: 900; font-style: normal; font-display: swap; }
+  </style>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -23,6 +31,7 @@
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
+            display: ['Dragon', 'Inter', 'sans-serif'],
             jp: ['"Noto Sans JP"', 'sans-serif'],
           },
         },
@@ -61,7 +70,7 @@
   <nav class="fixed top-0 w-full z-50 bg-night/80 backdrop-blur-md border-b border-white/5">
     <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="#" class="flex items-center gap-2">
-        <span class="text-xl font-bold text-white tracking-tight">ohio<span class="text-sunrise">.wtf</span></span>
+        <span class="text-xl font-bold text-white tracking-tight font-display">ohio<span class="text-sunrise">.wtf</span></span>
         <span class="text-xs font-jp text-ash mt-1">おはよう</span>
       </a>
       <a href="#contact" class="text-sm text-sunrise hover:text-warmth transition-colors">Get in touch →</a>
@@ -72,7 +81,7 @@
   <section class="min-h-screen flex items-center justify-center px-6 pt-20">
     <div class="max-w-3xl mx-auto text-center animate-in">
       <p class="text-ash text-sm tracking-[0.3em] uppercase mb-8">Boulder, CO</p>
-      <h1 class="text-6xl sm:text-8xl font-bold text-white mb-2 tracking-tight">
+      <h1 class="text-6xl sm:text-8xl font-bold text-white mb-2 tracking-tight font-display">
         おはよう<span class="text-sunrise">.</span>
       </h1>
       <p class="text-2xl sm:text-3xl text-ash font-light mt-6 mb-4">Good morning.</p>
@@ -95,7 +104,7 @@
     <div class="max-w-3xl mx-auto">
       <div class="divider mb-16"></div>
       <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">The problem</p>
-      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8 font-display">
         You didn't start a business to do<br>robot work.
       </h2>
       <div class="space-y-5 text-soft/70 text-lg leading-relaxed">
@@ -117,7 +126,7 @@
     <div class="max-w-3xl mx-auto">
       <div class="divider mb-16"></div>
       <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">How it works</p>
-      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-16 font-display">
         Three steps to mornings<br>that feel different.
       </h2>
       <div class="space-y-12">
@@ -152,7 +161,7 @@
       <div class="divider mb-16"></div>
       <div class="max-w-3xl">
         <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">Services</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4 font-display">
           Pick your wake-up call.
         </h2>
         <p class="text-soft/50 mb-16">Every engagement starts with a free audit. No commitment until you see the scope and price.</p>
@@ -162,7 +171,7 @@
         <!-- Tier 1 -->
         <div class="card rounded-xl p-8 transition-all duration-300 flex flex-col">
           <p class="text-sunrise text-sm font-medium tracking-wide mb-1">The Jumpstart</p>
-          <p class="text-3xl font-bold text-white mb-1">$500</p>
+          <p class="text-3xl font-bold text-white mb-1 font-display">$500</p>
           <p class="text-ash text-sm mb-6">one-time</p>
           <p class="text-soft/60 text-sm leading-relaxed mb-8">
             90-minute deep dive. I audit your workflow, identify the top 3 automation opportunities, and build at least one live before we're done. You walk away with something working.
@@ -180,7 +189,7 @@
         <!-- Tier 2 -->
         <div class="card rounded-xl p-8 transition-all duration-300 flex flex-col border-sunrise/15 glow">
           <p class="text-sunrise text-sm font-medium tracking-wide mb-1">The Buildout</p>
-          <p class="text-3xl font-bold text-white mb-1">$1,500 – $3,500</p>
+          <p class="text-3xl font-bold text-white mb-1 font-display">$1,500 – $3,500</p>
           <p class="text-ash text-sm mb-6">per project</p>
           <p class="text-soft/60 text-sm leading-relaxed mb-8">
             A complete automation system for a specific part of your business. Lead nurturing, client onboarding, invoicing pipelines, KPI dashboards — scoped, built, and handed off.
@@ -199,7 +208,7 @@
         <!-- Tier 3 -->
         <div class="card rounded-xl p-8 transition-all duration-300 flex flex-col">
           <p class="text-sunrise text-sm font-medium tracking-wide mb-1">The Retainer</p>
-          <p class="text-3xl font-bold text-white mb-1">$2,000</p>
+          <p class="text-3xl font-bold text-white mb-1 font-display">$2,000</p>
           <p class="text-ash text-sm mb-6">per month · 3-mo minimum</p>
           <p class="text-soft/60 text-sm leading-relaxed mb-8">
             Your on-call automation ops. I maintain what's running, build new systems as needs arise, and keep everything humming overnight while you sleep.
@@ -224,7 +233,7 @@
     <div class="max-w-3xl mx-auto">
       <div class="divider mb-16"></div>
       <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">What I build</p>
-      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-12 font-display">
         The stuff that runs while<br>you're not looking.
       </h2>
       <div class="grid sm:grid-cols-2 gap-x-12 gap-y-8">
@@ -261,7 +270,7 @@
     <div class="max-w-3xl mx-auto">
       <div class="divider mb-16"></div>
       <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">Kind words</p>
-      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-16 font-display">
         What mornings look like<br>for my clients.
       </h2>
       <div class="space-y-10">
@@ -286,7 +295,7 @@
     <div class="max-w-3xl mx-auto">
       <div class="divider mb-16"></div>
       <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">Who's behind this</p>
-      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8 font-display">
         Hey, I'm Greg.
       </h2>
       <div class="space-y-5 text-soft/60 text-lg leading-relaxed">
@@ -308,7 +317,7 @@
     <div class="max-w-xl mx-auto">
       <div class="divider mb-16"></div>
       <div class="text-center mb-12">
-        <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+        <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4 font-display">
           Ready for better<br>mornings<span class="text-sunrise">?</span>
         </h2>
         <p class="text-soft/50 text-lg">
@@ -349,7 +358,7 @@
   <footer class="py-12 px-6 border-t border-white/5">
     <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
-        <span class="text-sm font-bold text-white">ohio<span class="text-sunrise">.wtf</span></span>
+        <span class="text-sm font-bold text-white font-display">ohio<span class="text-sunrise">.wtf</span></span>
         <span class="text-xs font-jp text-ash">おはよう</span>
       </div>
       <p class="text-ash/40 text-xs">
