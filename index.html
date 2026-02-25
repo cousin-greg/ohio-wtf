@@ -109,15 +109,28 @@
     <p class="text-center text-ash text-sm tracking-[0.2em] uppercase mb-10">The future isn't coming — it's here. Don't get left behind.</p>
     <style>
       @keyframes scrollLeft {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
+        0% { transform: translate3d(0, 0, 0); }
+        100% { transform: translate3d(-50%, 0, 0); }
       }
       @keyframes scrollRight {
-        0% { transform: translateX(-50%); }
-        100% { transform: translateX(0); }
+        0% { transform: translate3d(-50%, 0, 0); }
+        100% { transform: translate3d(0, 0, 0); }
       }
-      .marquee-left { animation: scrollLeft 45s linear infinite; }
-      .marquee-right { animation: scrollRight 45s linear infinite; }
+      .marquee-left {
+        animation: scrollLeft 60s linear infinite;
+        will-change: transform;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .marquee-right {
+        animation: scrollRight 60s linear infinite;
+        will-change: transform;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .marquee-track {
+        -webkit-overflow-scrolling: touch;
+      }
       .marquee-track:hover .marquee-left,
       .marquee-track:hover .marquee-right { animation-play-state: paused; }
       .quote-card {
