@@ -88,7 +88,8 @@
       <h1 class="text-6xl sm:text-8xl font-bold text-white mb-2 tracking-tight font-display">
         おはよう<span class="text-sunrise">.</span>
       </h1>
-      <p class="text-2xl sm:text-3xl text-ash font-light mt-6 mb-4">Good morning.</p>
+      <p class="text-lg text-ash/50 tracking-[0.2em] uppercase mt-2 mb-4">ohayo</p>
+      <p class="text-2xl sm:text-3xl text-ash font-light mt-4 mb-4">Good morning.</p>
       <p class="text-lg sm:text-xl text-soft/70 max-w-xl mx-auto mt-8 leading-relaxed">
         While you were sleeping, your business was working. Automations ran. Reports built themselves. Leads got followed up. You just woke up to all of it — done.
       </p>
@@ -99,6 +100,112 @@
         <a href="#how" class="inline-block border border-white/10 text-soft px-8 py-3.5 rounded-lg hover:border-sunrise/30 hover:text-sunrise transition-all text-sm tracking-wide">
           See How It Works
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Quotes -->
+  <section class="py-16 overflow-hidden border-t border-b border-white/5">
+    <style>
+      @keyframes scrollLeft {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      @keyframes scrollRight {
+        0% { transform: translateX(-50%); }
+        100% { transform: translateX(0); }
+      }
+      .marquee-left { animation: scrollLeft 45s linear infinite; }
+      .marquee-right { animation: scrollRight 45s linear infinite; }
+      .marquee-track:hover .marquee-left,
+      .marquee-track:hover .marquee-right { animation-play-state: paused; }
+      .quote-card {
+        flex-shrink: 0;
+        padding: 1.25rem 2rem;
+        margin: 0 1rem;
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 0.75rem;
+        background: rgba(255,255,255,0.02);
+        max-width: 480px;
+        white-space: normal;
+      }
+    </style>
+
+    <!-- Row 1: scrolls left -->
+    <div class="marquee-track mb-4">
+      <div class="flex marquee-left" style="width: max-content;">
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"We believe that in 2025, we may see the first AI agents 'join the workforce' and materially change the output of companies."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Sam Altman — CEO, OpenAI</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"From this point forward, we will be managing not only human workers but also digital workers."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Marc Benioff — CEO, Salesforce</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"My guess is that by 2026 or 2027, we will have AI systems that are broadly better than almost all humans at almost all things."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Dario Amodei — CEO, Anthropic</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"2026 is a pivotal year for AI. We now have a clearer sense of where the tech is headed."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Satya Nadella — CEO, Microsoft</p>
+        </div>
+        <!-- duplicate for seamless loop -->
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"We believe that in 2025, we may see the first AI agents 'join the workforce' and materially change the output of companies."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Sam Altman — CEO, OpenAI</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"From this point forward, we will be managing not only human workers but also digital workers."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Marc Benioff — CEO, Salesforce</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"My guess is that by 2026 or 2027, we will have AI systems that are broadly better than almost all humans at almost all things."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Dario Amodei — CEO, Anthropic</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"2026 is a pivotal year for AI. We now have a clearer sense of where the tech is headed."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Satya Nadella — CEO, Microsoft</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: scrolls right -->
+    <div class="marquee-track">
+      <div class="flex marquee-right" style="width: max-content;">
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"In November 2025, I was still 80% manual + 20% AI; by December, it directly became 80% AI + 20% manual."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Andrej Karpathy — Co-founder, OpenAI</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"It's going to be a lot more like onboarding employees."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Jensen Huang — CEO, NVIDIA</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"If 2025 was the year of the agent, 2026 should be the year where all multi-agent systems move into production."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Kate Blair — IBM</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"AI copilots will be embedded in 80% of enterprise workplace applications by 2026."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">IDC Research</p>
+        </div>
+        <!-- duplicate for seamless loop -->
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"In November 2025, I was still 80% manual + 20% AI; by December, it directly became 80% AI + 20% manual."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Andrej Karpathy — Co-founder, OpenAI</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"It's going to be a lot more like onboarding employees."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Jensen Huang — CEO, NVIDIA</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"If 2025 was the year of the agent, 2026 should be the year where all multi-agent systems move into production."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">Kate Blair — IBM</p>
+        </div>
+        <div class="quote-card">
+          <p class="text-soft/60 text-sm leading-relaxed">"AI copilots will be embedded in 80% of enterprise workplace applications by 2026."</p>
+          <p class="text-sunrise text-xs mt-3 tracking-wide">IDC Research</p>
+        </div>
       </div>
     </div>
   </section>
