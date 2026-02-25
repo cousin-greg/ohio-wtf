@@ -24,8 +24,8 @@
           colors: {
             night: '#0a0a0f',
             dawn: '#1a1a2e',
-            sunrise: '#e8a87c',
-            warmth: '#d4956a',
+            sunrise: '#f59e0b',
+            warmth: '#eab308',
             ash: '#8a8a9a',
             soft: '#c4c4d4',
           },
@@ -40,23 +40,23 @@
   </script>
   <style>
     body { background-color: #0a0a0f; }
-    ::selection { background: #e8a87c33; color: #e8a87c; }
+    ::selection { background: #f59e0b33; color: #f59e0b; }
     .gradient-text {
-      background: linear-gradient(135deg, #e8a87c 0%, #d4956a 50%, #c4856a 100%);
+      background: linear-gradient(135deg, #f59e0b 0%, #eab308 50%, #d97706 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
     .divider {
       height: 1px;
-      background: linear-gradient(90deg, transparent, #e8a87c22, transparent);
+      background: linear-gradient(90deg, transparent, #f59e0b22, transparent);
     }
     .card {
       background: linear-gradient(180deg, #1a1a2e 0%, #12121f 100%);
       border: 1px solid #ffffff08;
     }
-    .card:hover { border-color: #e8a87c22; }
-    .glow { box-shadow: 0 0 80px #e8a87c08; }
+    .card:hover { border-color: #f59e0b22; }
+    .glow { box-shadow: 0 0 80px #f59e0b08; }
     @keyframes fade-up {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -70,7 +70,7 @@
   <nav class="fixed top-0 w-full z-50 bg-night/80 backdrop-blur-md border-b border-white/5">
     <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="#" class="flex items-center gap-2">
-        <span class="text-xl font-bold text-white tracking-tight font-display">ohio<span class="text-sunrise">.wtf</span></span>
+        <span class="text-2xl font-bold text-white tracking-tight font-display">ohio<span class="text-sunrise">.wtf</span></span>
         <span class="text-xs font-jp text-ash mt-1">おはよう</span>
       </a>
       <a href="#contact" class="text-sm text-sunrise hover:text-warmth transition-colors">Get in touch →</a>
