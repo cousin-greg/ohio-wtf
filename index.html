@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ohio.wtf — Say good morning to automation.</title>
+  <meta name="description" content="ohio.wtf builds AI automations that run your business while you sleep. Based in Boulder, CO.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            night: '#0a0a0f',
+            dawn: '#1a1a2e',
+            sunrise: '#e8a87c',
+            warmth: '#d4956a',
+            ash: '#8a8a9a',
+            soft: '#c4c4d4',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            jp: ['"Noto Sans JP"', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body { background-color: #0a0a0f; }
+    ::selection { background: #e8a87c33; color: #e8a87c; }
+    .gradient-text {
+      background: linear-gradient(135deg, #e8a87c 0%, #d4956a 50%, #c4856a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #e8a87c22, transparent);
+    }
+    .card {
+      background: linear-gradient(180deg, #1a1a2e 0%, #12121f 100%);
+      border: 1px solid #ffffff08;
+    }
+    .card:hover { border-color: #e8a87c22; }
+    .glow { box-shadow: 0 0 80px #e8a87c08; }
+    @keyframes fade-up {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-in { animation: fade-up 0.8s ease forwards; }
+  </style>
+</head>
+<body class="font-sans text-soft antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-night/80 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <span class="text-xl font-bold text-white tracking-tight">ohio<span class="text-sunrise">.wtf</span></span>
+        <span class="text-xs font-jp text-ash mt-1">おはよう</span>
+      </a>
+      <a href="#contact" class="text-sm text-sunrise hover:text-warmth transition-colors">Get in touch →</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-center px-6 pt-20">
+    <div class="max-w-3xl mx-auto text-center animate-in">
+      <p class="text-ash text-sm tracking-[0.3em] uppercase mb-8">Boulder, CO</p>
+      <h1 class="text-6xl sm:text-8xl font-bold text-white mb-2 tracking-tight">
+        おはよう<span class="text-sunrise">.</span>
+      </h1>
+      <p class="text-2xl sm:text-3xl text-ash font-light mt-6 mb-4">Good morning.</p>
+      <p class="text-lg sm:text-xl text-soft/70 max-w-xl mx-auto mt-8 leading-relaxed">
+        While you were sleeping, your business was working. Automations ran. Reports built themselves. Leads got followed up. You just woke up to all of it — done.
+      </p>
+      <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="inline-block bg-sunrise text-night font-semibold px-8 py-3.5 rounded-lg hover:bg-warmth transition-colors text-sm tracking-wide">
+          Book a Free Audit
+        </a>
+        <a href="#how" class="inline-block border border-white/10 text-soft px-8 py-3.5 rounded-lg hover:border-sunrise/30 hover:text-sunrise transition-all text-sm tracking-wide">
+          See How It Works
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="py-32 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="divider mb-16"></div>
+      <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">The problem</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8">
+        You didn't start a business to do<br>robot work.
+      </h2>
+      <div class="space-y-5 text-soft/70 text-lg leading-relaxed">
+        <p>
+          You started it because you're good at something. But now half your day is copy-pasting between spreadsheets, manually sending follow-ups, checking dashboards, and doing the same admin you did yesterday. And the day before.
+        </p>
+        <p>
+          Meanwhile, you keep hearing about AI from people who've clearly never built anything with it. Slide decks. Strategy sessions. Buzzwords.
+        </p>
+        <p class="text-white font-medium">
+          What if you went to bed tonight, and by morning, the boring parts were just… handled?
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="py-32 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="divider mb-16"></div>
+      <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">How it works</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-16">
+        Three steps to mornings<br>that feel different.
+      </h2>
+      <div class="space-y-12">
+        <div class="flex gap-6">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-sunrise/10 border border-sunrise/20 flex items-center justify-center text-sunrise font-bold text-sm">1</div>
+          <div>
+            <h3 class="text-white font-semibold text-lg mb-2">The Audit</h3>
+            <p class="text-soft/60 leading-relaxed">30 minutes. I look at your workflow and tell you what's worth automating. Sometimes the answer is "nothing right now." I'll say that. No cost, no pitch.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-sunrise/10 border border-sunrise/20 flex items-center justify-center text-sunrise font-bold text-sm">2</div>
+          <div>
+            <h3 class="text-white font-semibold text-lg mb-2">The Build</h3>
+            <p class="text-soft/60 leading-relaxed">I scope it, quote it, and build it. You get a working system — not a PDF of recommendations. Real automations running on your actual tools, ready to go.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-sunrise/10 border border-sunrise/20 flex items-center justify-center text-sunrise font-bold text-sm">3</div>
+          <div>
+            <h3 class="text-white font-semibold text-lg mb-2">The Handoff</h3>
+            <p class="text-soft/60 leading-relaxed">I make sure it works, show you how it works, and support it after launch. You go to sleep. Your business doesn't.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-32 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="divider mb-16"></div>
+      <div class="max-w-3xl">
+        <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">Services</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
+          Pick your wake-up call.
+        </h2>
+        <p class="text-soft/50 mb-16">Every engagement starts with a free audit. No commitment until you see the scope and price.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Tier 1 -->
+        <div class="card rounded-xl p-8 transition-all duration-300 flex flex-col">
+          <p class="text-sunrise text-sm font-medium tracking-wide mb-1">The Jumpstart</p>
+          <p class="text-3xl font-bold text-white mb-1">$500</p>
+          <p class="text-ash text-sm mb-6">one-time</p>
+          <p class="text-soft/60 text-sm leading-relaxed mb-8">
+            90-minute deep dive. I audit your workflow, identify the top 3 automation opportunities, and build at least one live before we're done. You walk away with something working.
+          </p>
+          <ul class="space-y-3 text-sm text-soft/50 mt-auto mb-8">
+            <li class="flex gap-2"><span class="text-sunrise">→</span> Workflow audit document</li>
+            <li class="flex gap-2"><span class="text-sunrise">→</span> 1 working automation, built live</li>
+            <li class="flex gap-2"><span class="text-sunrise">→</span> 30-day follow-up check-in</li>
+          </ul>
+          <a href="#contact" class="block text-center border border-white/10 text-soft py-3 rounded-lg text-sm hover:border-sunrise/30 hover:text-sunrise transition-all">
+            Start here
+          </a>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="card rounded-xl p-8 transition-all duration-300 flex flex-col border-sunrise/15 glow">
+          <p class="text-sunrise text-sm font-medium tracking-wide mb-1">The Buildout</p>
+          <p class="text-3xl font-bold text-white mb-1">$1,500 – $3,500</p>
+          <p class="text-ash text-sm mb-6">per project</p>
+          <p class="text-soft/60 text-sm leading-relaxed mb-8">
+            A complete automation system for a specific part of your business. Lead nurturing, client onboarding, invoicing pipelines, KPI dashboards — scoped, built, and handed off.
+          </p>
+          <ul class="space-y-3 text-sm text-soft/50 mt-auto mb-8">
+            <li class="flex gap-2"><span class="text-sunrise">→</span> Full build + testing</li>
+            <li class="flex gap-2"><span class="text-sunrise">→</span> Documentation & walkthrough</li>
+            <li class="flex gap-2"><span class="text-sunrise">→</span> 2 weeks post-launch support</li>
+            <li class="flex gap-2"><span class="text-sunrise">→</span> 1 revision round</li>
+          </ul>
+          <a href="#contact" class="block text-center bg-sunrise text-night font-semibold py-3 rounded-lg text-sm hover:bg-warmth transition-colors">
+            Let's scope it
+          </a>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="card rounded-xl p-8 transition-all duration-300 flex flex-col">
+          <p class="text-sunrise text-sm font-medium tracking-wide mb-1">The Retainer</p>
+          <p class="text-3xl font-bold text-white mb-1">$2,000</p>
+          <p class="text-ash text-sm mb-6">per month · 3-mo minimum</p>
+          <p class="text-soft/60 text-sm leading-relaxed mb-8">
+            Your on-call automation ops. I maintain what's running, build new systems as needs arise, and keep everything humming overnight while you sleep.
+          </p>
+          <ul class="space-y-3 text-sm text-soft/50 mt-auto mb-8">
+            <li class="flex gap-2"><span class="text-sunrise">→</span> Up to 10 hrs/month</li>
+            <li class="flex gap-2"><span class="text-sunrise">→</span> 24hr priority response</li>
+            <li class="flex gap-2"><span class="text-sunrise">→</span> Monthly check-in call</li>
+            <li class="flex gap-2"><span class="text-sunrise">→</span> Unlimited async via Telegram</li>
+            <li class="flex gap-2"><span class="text-sunrise">→</span> Proactive monitoring</li>
+          </ul>
+          <a href="#contact" class="block text-center border border-white/10 text-soft py-3 rounded-lg text-sm hover:border-sunrise/30 hover:text-sunrise transition-all">
+            Talk to me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I automate -->
+  <section class="py-32 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="divider mb-16"></div>
+      <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">What I build</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-12">
+        The stuff that runs while<br>you're not looking.
+      </h2>
+      <div class="grid sm:grid-cols-2 gap-x-12 gap-y-8">
+        <div>
+          <h3 class="text-white font-medium mb-1.5">Self-updating dashboards</h3>
+          <p class="text-soft/50 text-sm leading-relaxed">Stop copy-pasting into spreadsheets. Your numbers, pulled and formatted, every morning.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-medium mb-1.5">Smart alerts</h3>
+          <p class="text-soft/50 text-sm leading-relaxed">Get notified when something actually needs attention — not before, not after.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-medium mb-1.5">Lead nurturing</h3>
+          <p class="text-soft/50 text-sm leading-relaxed">New inquiry → personalized follow-up → drip campaign. While you slept.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-medium mb-1.5">Workflow automation</h3>
+          <p class="text-soft/50 text-sm leading-relaxed">Connect your tools so you stop being the human API between apps.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-medium mb-1.5">Scheduled reports</h3>
+          <p class="text-soft/50 text-sm leading-relaxed">Wake up to a summary instead of spending 30 minutes building one.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-medium mb-1.5">Custom bots</h3>
+          <p class="text-soft/50 text-sm leading-relaxed">Slack, Telegram, SMS — whatever you use — handling the repetitive stuff 24/7.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials placeholder -->
+  <section class="py-32 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="divider mb-16"></div>
+      <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">Kind words</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-16">
+        What mornings look like<br>for my clients.
+      </h2>
+      <div class="space-y-10">
+        <blockquote class="border-l-2 border-sunrise/20 pl-6">
+          <p class="text-soft/50 italic leading-relaxed">"Placeholder — first client testimonial goes here. Something about waking up to leads already followed up and reports already built."</p>
+          <cite class="text-ash text-sm mt-3 block not-italic">— Name, Business · Boulder, CO</cite>
+        </blockquote>
+        <blockquote class="border-l-2 border-sunrise/20 pl-6">
+          <p class="text-soft/50 italic leading-relaxed">"Placeholder — second testimonial. Something about hours saved and the feeling of your business running overnight."</p>
+          <cite class="text-ash text-sm mt-3 block not-italic">— Name, Business · Boulder, CO</cite>
+        </blockquote>
+        <blockquote class="border-l-2 border-sunrise/20 pl-6">
+          <p class="text-soft/50 italic leading-relaxed">"Placeholder — third testimonial. Something about the Jumpstart session being the best $500 they've spent."</p>
+          <cite class="text-ash text-sm mt-3 block not-italic">— Name, Business · Boulder, CO</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-32 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="divider mb-16"></div>
+      <p class="text-sunrise text-sm tracking-[0.2em] uppercase mb-6">Who's behind this</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight mb-8">
+        Hey, I'm Greg.
+      </h2>
+      <div class="space-y-5 text-soft/60 text-lg leading-relaxed">
+        <p>
+          I'm a builder based in Boulder. I've spent the last year building AI automations for my own business — trading bots, automated dashboards, notification systems, data pipelines. Not as a demo. As stuff I actually use, every day, in production.
+        </p>
+        <p>
+          Most "AI consultants" sell strategy decks and charge you to explain what ChatGPT is. I sit down, open my laptop, and walk out with your business running automations that save you real hours every week.
+        </p>
+        <p class="text-white">
+          I don't talk about AI. I build it into your business while you watch.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section id="contact" class="py-32 px-6">
+    <div class="max-w-xl mx-auto">
+      <div class="divider mb-16"></div>
+      <div class="text-center mb-12">
+        <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+          Ready for better<br>mornings<span class="text-sunrise">?</span>
+        </h2>
+        <p class="text-soft/50 text-lg">
+          Book a free 30-minute automation audit. I'll tell you what's worth automating — and what isn't. No pitch deck. Just coffee and honesty.
+        </p>
+      </div>
+
+      <form action="https://formspree.io/f/PLACEHOLDER" method="POST" class="space-y-4">
+        <div>
+          <input type="text" name="name" placeholder="Your name" required
+            class="w-full bg-dawn/50 border border-white/5 rounded-lg px-4 py-3 text-white placeholder-ash/50 text-sm focus:outline-none focus:border-sunrise/30 transition-colors">
+        </div>
+        <div>
+          <input type="email" name="email" placeholder="Email" required
+            class="w-full bg-dawn/50 border border-white/5 rounded-lg px-4 py-3 text-white placeholder-ash/50 text-sm focus:outline-none focus:border-sunrise/30 transition-colors">
+        </div>
+        <div>
+          <input type="text" name="business" placeholder="Your business (optional)"
+            class="w-full bg-dawn/50 border border-white/5 rounded-lg px-4 py-3 text-white placeholder-ash/50 text-sm focus:outline-none focus:border-sunrise/30 transition-colors">
+        </div>
+        <div>
+          <textarea name="message" rows="3" placeholder="What's eating up your time?" required
+            class="w-full bg-dawn/50 border border-white/5 rounded-lg px-4 py-3 text-white placeholder-ash/50 text-sm focus:outline-none focus:border-sunrise/30 transition-colors resize-none"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full bg-sunrise text-night font-semibold py-3.5 rounded-lg hover:bg-warmth transition-colors text-sm tracking-wide">
+          Book My Free Audit →
+        </button>
+      </form>
+
+      <p class="text-center text-ash/40 text-xs mt-6">
+        Or just email <a href="mailto:greg@packrush.com" class="text-sunrise/60 hover:text-sunrise transition-colors">greg@packrush.com</a> · Boulder, CO · Happy to meet for coffee ☕
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-white/5">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="text-sm font-bold text-white">ohio<span class="text-sunrise">.wtf</span></span>
+        <span class="text-xs font-jp text-ash">おはよう</span>
+      </div>
+      <p class="text-ash/40 text-xs">
+        Say good morning to automation. · <a href="https://ohio.wtf" class="hover:text-sunrise transition-colors">ohio.wtf</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
